@@ -62,15 +62,11 @@ for(i = 0; i < teamMemb.length; i++){
 
 
 /*
-    <div class="row">
-        <div class="col-3">
-            <div class="card">
-                <img src="" alt="">
-                <div class="card-body">
-                    <h4></h4>
-                    <p></p>
-                </div>
-            </div>
+    <div class="card">
+        <img src="" alt="">
+        <div class="card-body">
+            <h4 class='card-title'></h4>
+            <p class='card-text'></p>
         </div>
     </div>
 */
@@ -78,4 +74,19 @@ for(i = 0; i < teamMemb.length; i++){
 /*
 *MILESTONE 2
 */
+// create function to print card member
+function printMemb(member){
+    const col = document.createElement('div');
+    col.classList.add('col-3');
+    const card = `
+    <div class="card">
+        <img class='card-img-top' src="img" alt="">
+        <div class="card-body">
+            <h4 class='card-title'></h4>
+            <p class='card-text'></p>
+        </div>
+    </div>
 
+    `
+
+}
