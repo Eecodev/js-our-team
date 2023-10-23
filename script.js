@@ -61,3 +61,21 @@ for(i = 0; i < teamMemb.length; i++){
 }
 
 
+/*
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <img src="" alt="">
+                <div class="card-body">
+                    <h4></h4>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+*/
+
+/*
+*MILESTONE 2
+*/
+
