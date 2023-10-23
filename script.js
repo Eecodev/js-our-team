@@ -55,21 +55,14 @@ const teamMemb = [
 * MILESTONE 1
 */
 
+const rowEl = document.querySelector('.row');
+console.log(rowEl);
+
 //create loop "for" to print info of each member
 for(let i = 0; i < teamMemb.length; i++){
     printMemb(teamMemb[i]);
 }
 
-
-/*
-    <div class="card">
-        <img src="" alt="">
-        <div class="card-body">
-            <h4 class='card-title'></h4>
-            <p class='card-text'></p>
-        </div>
-    </div>
-*/
 
 /*
 *MILESTONE 2
@@ -80,10 +73,10 @@ function printMemb(member){
     col.classList.add('col-3');
     const card = `
     <div class="card">
-        <img class='card-img-top' src="img" alt="">
+        <img class='card-img-top' src="img/${member.picture}" alt="">
         <div class="card-body">
-            <h4 class='card-title'></h4>
-            <p class='card-text'></p>
+            <h4 class='card-title'>${member.name}</h4>
+            <p class='card-text'>${member.role}</p>
         </div>
     </div>
 
@@ -91,4 +84,7 @@ function printMemb(member){
     let name = member.name;
     let role = member.role;
     let picture = member.picture;
+
+    col.innerHTML = card;
+    rowEl.append(col);
 }
