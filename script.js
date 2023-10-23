@@ -81,10 +81,39 @@ function printMemb(member){
     </div>
 
     `
+    //declare variables to use as data interpolation for each card member
     let name = member.name;
     let role = member.role;
     let picture = member.picture;
 
+    //print card on html
     col.innerHTML = card;
+    //append col to row 
     rowEl.append(col);
+}
+
+
+/*
+*BONUS
+*/
+const btn = document.querySelector('button');
+console.log(btn);
+
+btn.addEventListener('click', ()=>{
+    const newMemb = {
+        name: document.getElementById('name').value,
+        role: document.getElementById('role').value,
+        picture: document.getElementById('picture').value,
+    }
+
+    console.log(newMemb);
+    teamMemb.push(newMemb);
+    printMemb(newMemb);
+    reset();
+})
+
+function reset(){
+    document.getElementById('name').value = '';
+    document.getElementById('role').value = '';
+    document.getElementById('picture').value = '';
 }
