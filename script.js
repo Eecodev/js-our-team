@@ -70,7 +70,8 @@ for(let i = 0; i < teamMemb.length; i++){
 // create function to print card member
 function printMemb(member){
     const col = document.createElement('div');
-    col.classList.add('col-3');
+    col.classList.add('col-4');
+    col.classList.add('mb-5');
     const card = `
     <div class="card">
         <img class='card-img-top' src="img/${member.picture}" alt="">
