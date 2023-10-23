@@ -56,8 +56,8 @@ const teamMemb = [
 */
 
 //create loop "for" to print info of each member
-for(i = 0; i < teamMemb.length; i++){
-    console.log(teamMemb[i]);
+for(let i = 0; i < teamMemb.length; i++){
+    printMemb(teamMemb[i]);
 }
 
 
@@ -88,5 +88,7 @@ function printMemb(member){
     </div>
 
     `
-
+    let name = member.name;
+    let role = member.role;
+    let picture = member.picture;
 }
