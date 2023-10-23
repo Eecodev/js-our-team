@@ -16,6 +16,7 @@
 /*
 * MILESTONE 0
 */
+"use strict";
 //create array objects
 const teamMemb = [
     {
@@ -53,8 +54,10 @@ const teamMemb = [
 /*
 * MILESTONE 1
 */
+
 //create loop "for" to print info of each member
 for(i = 0; i < teamMemb.length; i++){
     console.log(teamMemb[i]);
 }
+
 
